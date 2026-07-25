@@ -13,7 +13,7 @@ export default function Page() {
   useEffect(() => {
     const getting = async () => {
       try {
-        const response = await fetch("http://localhost:3000/backend/api");
+        const response = await fetch("/backend/api");
         const result = await response.json();
 
         const filtered = result.filter((item) => {

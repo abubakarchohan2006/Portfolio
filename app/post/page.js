@@ -11,7 +11,7 @@ export default function Page() {
     })
 
     const addPost = async () => {
-        const response = await fetch("http://localhost:3000/backend/api", {
+        const response = await fetch("/backend/api", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
