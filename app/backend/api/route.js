@@ -1,5 +1,5 @@
-import connectDB from "../config/page";
-import Popost from "../models/page";
+import connectDB from "../../../config/page";
+import Popost from "../../../models/page";
 await connectDB();
 
 export async function GET() {
@@ -17,7 +17,7 @@ export async function GET() {
       { status: 500 }
     );
   }
-}
+} 
 
 export async function POST(req) {
     const data = await req.json();
